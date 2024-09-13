@@ -3,8 +3,6 @@ import {NextFunction, Request, Response} from 'express';
 import {ErrorResponse} from './types/MessageTypes';
 import CustomError from './classes/CustomError';
 import {FieldValidationError, validationResult} from 'express-validator';
-import OpenAI from 'openai';
-const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
 
 const notFound = (req: Request, _res: Response, next: NextFunction) => {
   const error = new CustomError(`🔍 - Not Found - ${req.originalUrl}`, 404);

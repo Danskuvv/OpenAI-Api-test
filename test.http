@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/v1/comments
+Content-Type: application/json
+
+{
+  "text": "This video is amazing!",
+  "style": "sarcastic"
+}
