@@ -5,3 +5,13 @@ Content-Type: application/json
   "text": "This video is amazing!",
   "style": "sarcastic"
 }
+
+
+
+################## image
+POST http://localhost:3000/api/v1/images
+Content-Type: application/json
+
+{
+  "topic": "kiwi birds"
+}
